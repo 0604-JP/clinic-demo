@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrightSmile Dental (Demo)</title>
+  <meta name="description" content="Demo clinic landing page with website chat assistant." />
+  <style>
+    :root { --max: 860px; --border: #e6e6e6; --muted: #666; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    header { padding: 28px 16px; border-bottom: 1px solid var(--border); }
+    main { max-width: var(--max); margin: 0 auto; padding: 16px; }
+    .brand { max-width: var(--max); margin: 0 auto; }
+    h1 { margin: 0 0 4px 0; font-size: 28px; }
+    .muted { color: var(--muted); margin: 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+    @media (min-width: 720px){ .grid{ grid-template-columns: 1fr 1fr; } }
+    .card { border: 1px solid var(--border); border-radius: 14px; padding: 16px; background: #fff; }
+    .card h2 { margin: 0 0 8px 0; font-size: 18px; }
+    ul { margin: 0; padding-left: 18px; }
+    .cta { display: inline-block; margin-top: 10px; padding: 10px 14px; border: 1px solid #111; border-radius: 10px; text-decoration: none; color: #111; }
+    .note { font-size: 13px; color: var(--muted); margin-top: 10px; }
+    footer { border-top: 1px solid var(--border); padding: 18px 16px; }
+    footer .brand { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <h1>BrightSmile Dental</h1>
+      <p class="muted">Demo clinic website with a 24/7 chat assistant (bottom-right).</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>Services</h2>
+        <ul>
+          <li>Scaling &amp; polishing</li>
+          <li>Fillings</li>
+          <li>Wisdom tooth consultation</li>
+          <li>Braces consultation</li>
+        </ul>
+        <p class="note">Ask in chat for availability and appointment requests.</p>
+      </section>
+
+      <section class="card">
+        <h2>Opening Hours</h2>
+        <p><strong>Mon–Fri:</strong> 10am–7pm<br>
+           <strong>Sat:</strong> 10am–3pm<br>
+           <strong>Sun/PH:</strong> Closed</p>
+        <a class="cta" href="#chat">Chat to book</a>
+      </section>
+
+      <section class="card">
+        <h2>Location</h2>
+        <p>Demo Street, Singapore<br>
+          Nearest MRT: Demo MRT (Exit A)</p>
+      </section>
+
+      <section class="card">
+        <h2>How this demo works</h2>
+        <p>This site is used to demo a clinic “AI receptionist” flow:
+          FAQs → lead capture → booking request → staff notification.</p>
+        <p class="note">Disclaimer: This demo does not provide medical advice.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="brand">
+      © <span id="y"></span> BrightSmile Dental (Demo). For demonstration only.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- ✅ Paste your Tawk.to widget script BELOW this comment -->
+  <!-- Example:
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/1abcdefg';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  -->
+</body>
+</html>
